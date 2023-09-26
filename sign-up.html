@@ -2,14 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      e:\#Pograms\Microsoft
-      VS
-      Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html
-    />
     <link rel="stylesheet" href="CSS/sign-up.css" />
     <link rel="icon" href="Image/icon.png" type="image/x-icon" />
     <script
@@ -40,27 +32,36 @@
             <div></div>
           </div>
 
-          <form>
+          <form action="/signup" method="POST">
             <label>What's your email?</label>
-            <input type="text" placeholder="Enter your email." />
-
-            <label>Confirm your email</label>
-            <input type="text" placeholder="Enter your email again." />
+            <input type="text" name="email" placeholder="Enter your email." />
 
             <label>Create a password</label>
-            <input type="password" placeholder="Create a password." />
+            <input
+              type="password"
+              name="password"
+              placeholder="Create a password."
+            />
 
             <label>Confirm your password</label>
-            <input type="password" placeholder="Enter your password again." />
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Enter your password again."
+            />
 
             <label>What should we call you?</label>
-            <input type="text" placeholder="Enter a Profile name." />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter a Profile name."
+            />
 
             <label>What's your date of birth?</label>
-            <input type="date" />
+            <input type="date" name="dob" />
 
             <label> What's your gender?</label>
-            <div class="gender-container">
+            <div class="gender-container" for="gender">
               <input
                 type="radio"
                 id="male"

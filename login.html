@@ -52,16 +52,19 @@
             <p>or</p>
             <div></div>
           </div>
-
-          <label> Email address or username. </label>
-          <input type="text" placeholder="Email address or Username" />
-
-          <label>Password.</label>
-          <input type="password" placeholder="Password" />
-
-          <a href="index.html">
-            <button class="sign-up-btn">Log In</button>
-          </a>
+          <form action="/login" method="POST">
+            <label> Email address or username. </label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Email address or Username"
+            />
+            <label>Password.</label>
+            <input type="password" name="password" placeholder="Password" />
+            <a href="index.html">
+              <button class="sign-up-btn" type="submit">Log In</button>
+            </a>
+          </form>
         </div>
       </section>
     </main>
